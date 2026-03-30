@@ -34,7 +34,8 @@ class StudentController extends Controller
         $student->save();
 
         return response()->json([
-            'message' => 'تم تسجيل الدخول وتخزين البيانات بنجاح'
+            'message' => 'تم تسجيل الدخول وتخزين البيانات بنجاح',
+            'data' => $data,
         ]);
     }
 
